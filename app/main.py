@@ -5,11 +5,16 @@ from app.knight import prepare_knights
 # 1 Lancelot vs Mordred:
 
 
-def battle(knights: dict) -> dict:
-    knights = prepare_knights(KNIGHTS)
+def battle(config: dict) -> dict:
+    knights = prepare_knights(config)
 
     lancelot = knights["lancelot"]
     mordred = knights["mordred"]
+
+    print("Lancelot:", lancelot.hp, lancelot.power, lancelot.protection)
+    print("Mordred:", mordred.hp, mordred.power, mordred.protection)
+
+
     arthur = knights["arthur"]
     red_knight = knights["red_knight"]
 
