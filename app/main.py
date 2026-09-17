@@ -14,7 +14,6 @@ def battle(config: dict) -> dict:
     print("Lancelot:", lancelot.hp, lancelot.power, lancelot.protection)
     print("Mordred:", mordred.hp, mordred.power, mordred.protection)
 
-
     arthur = knights["arthur"]
     red_knight = knights["red_knight"]
 
